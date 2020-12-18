@@ -10,7 +10,7 @@ describe('Controllers: Products', () => {
   }];
 
   describe('get() products', () => {
-    it('shold return a list of products', () => {
+    it('should return a list of products', () => {
       const request = {};
       const response = {
         send: sinon.spy()
@@ -21,8 +21,6 @@ describe('Controllers: Products', () => {
 
       expect(response.send.called).to.be.true;
       expect(response.send.calledWith(defaultProduct)).to.be.true;
-
-
     });
   });
 });
